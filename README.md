@@ -1,1 +1,1 @@
-# arrayPRactice
+# arrayPractice
