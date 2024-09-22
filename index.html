@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div id="assign-role">
+      <h1>Check here for your assigned role for the day!</h1>
+    </div>
+    <div id="Department">
+      <div class="buttons">
+        <button onclick="getDepartment('Associate')">Associate</button>
+        <button onclick="getDepartment('Management')">Management</button>
+        <button onclick="getDepartment('Janitorial')">Janitorial</button>
+        <button onclick="getDepartment('IT Support')">IT Support</button>
+      </div>
+      <div class="department-list"></div>
+    </div>
+    <div id="project-board">
+      <h1>Projects that need to be completed before end of week</h1>
+      <div class="projects flex"></div>
+      <button onclick="newProjects()">Get next week projects</button>
+    </div>
+    <div id="shopping">
+      <h1>Shopping I Need To Do!</h1>
+      <div class="shopping-list"></div>
+      <div class="button">
+        <input type="number" id="input" />
+        <button onclick="applyPercent()">Apply Coupon</button>
+      </div>
+    </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
